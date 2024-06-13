@@ -1,4 +1,4 @@
-// This thign 
+// This thing Needs to commit properly
 let clicks = 0;
 
 document.getElementById("btn_click").addEventListener("click", buttonClicked);
