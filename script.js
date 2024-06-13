@@ -1,4 +1,4 @@
-// HAPPY
+// This thign 
 let clicks = 0;
 
 document.getElementById("btn_click").addEventListener("click", buttonClicked);
