@@ -1,27 +1,72 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
+<!DOCTYPE html>
 <head>
-    <title>4.4 - Interaction in HTML</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐿️</text></svg>">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Click</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
 
-    <!-- Load the script with the 'defer' attribute -->
+        .cover {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 50px;
+            border-radius: 10px;
+        }
 
+        .cover h1 {
+            font-size: 50px;
+            margin: 0;
+            color: #9a2fd3;
+        }
+
+        .cover p {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #4E342E;
+        }
+
+        .cover button {
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            background-color: #ad0ced;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cover button:hover {
+            background-color: #B71C1C;
+        }
+    </style>
 </head>
-
 <body>
-    <h1>Interaction in HTML using JavaScript</h1>
-
-    <div>
-        <button id="add_click_btn">Click Me</button>
-        <div>I have been clicked <span id="click_count">0</span> times.</div>
-    </div>
-
-    <div class="footer">
-        To open the <code>dev console</code>, hit CTRL+SHIFT+J (⌘+Option+J on a Mac).
+    <div class="cover">
+        <h1>Click Counter</h1>
+        <p>Welcome to a new clicking experience!<p>
+            </html>
+            <head>
+                <title>Click Counter</title>
+                <script src="script.js" defer></script>
+            </head>
+            <body>
+                <button id="btn_click">Click Me</button>
+                <button id="btn_decrease">Decrease</button>
+                <button id="btn_reset">Reset</button>
+                <h1></h1>
+                <span id="click_counter">0</span>
+                
+            </body>
+            </html>
     </div>
 </body>
 
